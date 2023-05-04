@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Timer</title>
+    <link rel="icon" href="favicon.svg" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="timer-wrap">
+        <div class="controls">
+            <button id="period-inc">▲</button>
+            <button id="period-dec">▼</button>
+        </div>
+        <div class="timer">
+            <svg width="480" height="480">
+                <path id="ring" d="M 230 10 A 230 230 90 0 0 240 0" fill="none" stroke="#302060" stroke-width="10" />
+            </svg>
+            <div class="disp">
+                <div class="disp-period-out">
+                    <div class="disp-period">
+                        <span class="period-cur-int">4</span><span class="period-cur-dec">.00</span>
+                        <span class="period">/4</span>
+                    </div>
+                </div>
+                <div class="disp-interval-out">
+                    <div class="disp-interval">
+                        <span class="interval-cur-int">2</span><span class="interval-cur-dec">.00</span>
+                        <span class="interval">/2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="interval-inc">▲</button>
+            <button id="interval-dec">▼</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
